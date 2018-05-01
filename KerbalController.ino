@@ -158,8 +158,8 @@ void loop(){
       LCD.setCursor(EllipsesLoc, 0);
       EllipsesTimer.begin(EllipsesDisp, ELLIPSES_LOCK_PER);   //Create ellipses timer task
       
-//      while(digitalRead(MEN) == 1){}    //Blocking code: wait until board is locked (Board cannot start unlocked)
-//      while(digitalRead(MEN) == 0){}    //Blocking code: wait until board is unlocked
+      while(digitalRead(MEN) == 1){}    //Blocking code: wait until board is locked (Board cannot start unlocked)
+      while(digitalRead(MEN) == 0){}    //Blocking code: wait until board is unlocked
       EllipsisCnt = 0;
       ProgState = INIT;
       break;
