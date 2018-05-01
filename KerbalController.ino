@@ -37,11 +37,7 @@
 #define LCD_CNTL_PRIO 192
 #define JOY_CNTL_PRIO 176
 #define REG_RESET_PRIO 160     //Must be lower priority than register controller task, but high enough to preempt other tasks
-#define REG_CNTL_PRIO 144      
-//#define LCD_CNTL_PRIO 64
-//#define JOY_CNTL_PRIO 48
-//#define REG_RESET_PRIO 32     //Must be lower priority than register controller task, but high enough to preempt other tasks
-//#define REG_CNTL_PRIO 16  
+#define REG_CNTL_PRIO 144
 
 #define LAMPHOLD 500          //Time in ms that LEDs are held on after all are set during lamp test
 #define LAMPSEP 50            //Separation in ms of LED flashes during lamp test
